@@ -52,7 +52,7 @@ body, .logo p {
   padding-bottom: 2rem;
 }
 
-.px-2 {
+.px-2, .card-slider .card {
   padding-right: 2rem;
   padding-left: 2rem;
 }
@@ -109,7 +109,7 @@ body, .logo p {
   padding-left: 4rem;
 }
 
-.py-4 {
+.py-4, .card-slider .card {
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
@@ -174,7 +174,7 @@ body, .logo p {
   margin-left: 2rem;
 }
 
-.mr-2 {
+.mr-2, .card-slider .card {
   margin-right: 2rem;
 }
 
@@ -280,6 +280,45 @@ body, .logo p {
   src: url("../fonts/ProximaNova-Regular.ttf");
 }
 
+.logo,
+h1,
+h2 {
+  font-family: ProximaNovaBold;
+}
+
+body {
+  font-family: ProximaNova;
+  line-height: 1.5;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 3rem;
+  color: #000000;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 2.5rem;
+  color: #000000;
+  margin-bottom: 0.5rem;
+}
+
+.cta p {
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+nav ul {
+  font-size: 1.1rem;
+  font-family: ProximaNovaBold;
+}
+
 a {
   color: black;
   display: inline-block;
@@ -293,7 +332,19 @@ a {
 
 .logo {
   margin-top: 1rem;
-  padding-top: .7rem;
+  padding-top: 0.7rem;
+}
+
+.logo p {
+  font-weight: bold;
+  font-size: 30px;
+  color: #000;
+  display: inline-block;
+}
+
+.logo svg {
+  width: 20px;
+  fill: black;
 }
 
 .col {
@@ -302,22 +353,15 @@ a {
   padding-right: 15px;
 }
 
-.logo,
-h1 {
-  font-family: ProximaNovaBold;
-}
-
-body {
-  font-family: ProximaNova;
-}
-
 .btn {
   background: #ffffff;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
-  -webkit-transition: 0.5s all;
-  transition: 0.5s all;
+  -webkit-transition: -webkit-box-shadow 0.5s;
+  transition: -webkit-box-shadow 0.5s;
+  transition: box-shadow 0.5s;
+  transition: box-shadow 0.5s, -webkit-box-shadow 0.5s;
   padding: 0.75rem 1rem;
   font-size: 20px;
 }
@@ -328,32 +372,7 @@ body {
   background: #e6e6e6;
 }
 
-h1 {
-  font-weight: bold;
-  font-size: 50px;
-  line-height: 50px;
-  color: #000000;
-  margin-bottom: 0.5rem;
-}
-
-.cta p {
-  font-weight: 300;
-  font-size: 25px;
-  line-height: 1.5;
-}
-
-.logo p {
-  font-weight: bold;
-  font-size: 30px;
-  color: #000000;
-}
-
-nav ul {
-  font-size: 20px;
-  font-family: ProximaNovaBold;
-}
-
-.row, header .nav ul {
+.row, header .nav ul, .card-slider {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -361,10 +380,13 @@ nav ul {
   padding-right: -1rem;
 }
 
-header.row {
+header.row, header.card-slider {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 
 header {
@@ -380,7 +402,7 @@ header {
   background-color: salmon;
 }
 
-#hero .row, #hero header .nav ul, header .nav #hero ul {
+#hero .row, #hero header .nav ul, header .nav #hero ul, #hero .card-slider {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -391,5 +413,18 @@ header {
   -webkit-box-flex: 0;
       -ms-flex: 0 50%;
           flex: 0 50%;
+}
+
+.card-slider {
+  position: relative;
+}
+
+.card-slider .card {
+  background: salmon;
+  display: none;
+}
+
+.card-slider .card.active {
+  display: block;
 }
 /*# sourceMappingURL=style.css.map */

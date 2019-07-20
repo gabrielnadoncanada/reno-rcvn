@@ -8,27 +8,54 @@
     <title>Document</title>
     <link rel="stylesheet" href="scss/style.css">
 </head>
+
 <body>
-    <header class="row">
-        <div class="col">
-            <div class="logo">
-                <p>RCVN</p>
+    <header>
+        <div class="row">
+            <div class="col">
+                <div class="logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 182.91 183.9">
+                        <defs>
+                            <style>
+                                .cls-1 {
+                                    fill: black;
+                                }
+                            </style>
+                        </defs>
+                        <title>Asset 1</title>
+                        <g id="Layer_2" data-name="Layer 2">
+                            <g id="Layer_1-2" data-name="Layer 1">
+                                <polygon class="cls-1"
+                                    points="182.91 128.76 182.91 85.25 91.45 0 68.14 21.74 182.91 128.76" />
+                                <polygon class="cls-1"
+                                    points="52.65 36.17 30 57.29 165.77 183.9 182.91 183.9 182.91 157.64 52.65 36.17" />
+                                <polygon class="cls-1" points="0 130.84 0 183.9 56.89 183.9 0 130.84" />
+                                <polygon class="cls-1"
+                                    points="87.86 183.9 134.81 183.9 14.51 71.72 0 85.25 0 101.97 87.86 183.9" />
+                            </g>
+                        </g>
+                    </svg>
+                    <p>RCVN</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="nav">
+                    <nav>
+                        <ul>
+                            <li><a href="#">Accueil</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Projets</a></li>
+                            <li><a class="btn" href="#">Obtenir une soumission</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </div>
-        <div class="col">
-            <div class="nav">
-                <nav>
-                    <ul>
-                        <li><a href="#">Accueil</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Projets</a></li>
-                        <li><a class="btn" href="#">Obtenir une soumission</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
+
     </header>
     <main>
+
+        <!-- hero -->
         <section id="hero">
             <div class="row">
                 <div class="col">
@@ -49,6 +76,34 @@
                         ispum dolor
                         sit lorem ispum dolor sit</p>
                 </div>
+                <div class="col">
+                    <div class="card-slider">
+                        <div class="card active">
+                            <p>01</p>
+                            <h3>Identify</h3>
+                            <p>Establish project goals, permit acquisition</p>
+                        </div>
+                        <div class="card">
+                            <p>01</p>
+                            <h3>Identify</h3>
+                            <p>Establish project goals, permit acquisition</p>
+                        </div>
+                        <div class="card">
+                            <p>01</p>
+                            <h3>Identify</h3>
+                            <p>Establish project goals, permit acquisition</p>
+                        </div>
+                        <div class="card">
+                            <p>01</p>
+                            <h3>Identify</h3>
+                            <p>Establish project goals, permit acquisition</p>
+                        </div>
+                        <div class="controls">
+                        </div>
+                    </div>
+                    <button id="prev">prev</button>
+                    <button id="next">next</button>
+                </div>
             </div>
         </section>
         <section id="projets">
@@ -59,6 +114,9 @@
                         ispum dolor
                         sit lorem ispum dolor sit</p>
                     <a class="btn" href="#">Obtenir une soumission</a>
+                </div>
+                <div class="col">
+
                 </div>
             </div>
         </section>
@@ -86,6 +144,7 @@
             </div>
         </footer>
     </main>
+    <script src="js/app.js"></script>
 </body>
 
 </html>

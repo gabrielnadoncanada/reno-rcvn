@@ -1,0 +1,50 @@
+@font-face {
+  font-family: "ProximaNovaBold";
+  src: url("../fonts/ProximaNova-Bold.ttf");
+}
+
+@font-face {
+  font-family: "ProximaNova";
+  src: url("../fonts/ProximaNova-Regular.ttf");
+}
+
+.logo,
+h1,
+h2 {
+  font-family: ProximaNovaBold;
+}
+
+body {
+  font-family: ProximaNova;
+  line-height: 1.5;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 3rem;
+  color: #000000;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 2.5rem;
+  color: #000000;
+  margin-bottom: 0.5rem;
+}
+
+.cta p {
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+nav {
+  ul {
+    font-size: 1.1rem;
+    font-family: ProximaNovaBold;
+  }
+}
