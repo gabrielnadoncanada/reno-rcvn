@@ -2,7 +2,7 @@
 // sass mixins loop for margin and padding
 
 @mixin list-loop($class, $styleName) {
-  @for $i from 1 through 5 {
+  @for $i from 1 through 10 {
     .#{$class}t-#{$i} {
       #{$styleName}-top: #{$i}rem;
     }
