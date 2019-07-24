@@ -10,8 +10,7 @@ a {
 }
 
 .logo {
-  margin-top: 1rem;
-  padding-top: 0.7rem;
+  padding-top: 1rem;
 
   p {
     font-weight: bold;
@@ -21,16 +20,9 @@ a {
   }
 
   svg {
-    width: 20px;
-    fill: black;
+    width: 150px;
+    // fill: black;
   }
-}
-
-.col {
-  width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
-  
 }
 
 .btn {
@@ -44,30 +36,6 @@ a {
   &:hover {
     box-shadow: none;
     background: darken(#fff, 10%);
-  }
-}
-
-.row {
-  display: flex;
-  padding-left: -1rem;
-  padding-right: -1rem;
- 
-}
-
-header {
-  &.row {
-    justify-content: space-between;
-    align-items: baseline;
-  }
-
-  .nav {
-    ul {
-      @extend .row;
-
-      li {
-        @extend .mr-1;
-      }
-    }
   }
 }
 
@@ -86,21 +54,15 @@ header {
   .row {
     align-items: center;
     height: 100%;
+    .col {
+      flex: 0 50%;
+    }
   }
-}
-
-section {
-  @extend .mb-5;
-}
-
-.cta {
-  flex: 0 50%;
 }
 
 .card-slider {
   position: relative;
   @extend .row;
-  
 }
 
 .card {
@@ -116,22 +78,16 @@ section {
   }
 }
 
-nav {
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
-}
 
-.txt-center {
-  text-align: center;
-}
+#landing {
+  height: 100vh;
+  .row {
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
 
-
-
-.align-items-center {
-  align-items: center;
-}
-
-.justify-content-center {
-  justify-content: center;
+  .logo svg {
+    width: 100%;
+  }
 }
