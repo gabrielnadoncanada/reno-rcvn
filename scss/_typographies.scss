@@ -1,0 +1,158 @@
+
+@font-face {
+  font-family: "Geomanist";
+  src: url(../fonts/Geomanist-Medium.otf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Geomanist";
+  src: url(../fonts/Geomanist-Regular.otf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Geomanist";
+  src: url(../fonts/Geomanist-Book.otf);
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "Roboto Slab";
+  src: url(../fonts/RobotoSlab-Light.ttf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Roboto Slab";
+  src: url(../fonts/RobotoSlab-Medium.ttf);
+  font-weight: 500;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1 {
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 300;
+  color: white;
+  margin-bottom: 6.5rem;
+  @media (min-width: 1200px) {
+    font-size: 10.2rem;
+    line-height: 11rem;
+    margin-top: 0;
+  }
+
+  b {
+    font-family: "Roboto Slab", sans-serif;
+    font-weight: 500;
+  }
+}
+
+h2 {
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 300;
+  @media (min-width: 1200px) {
+    font-size: 5.5rem;
+  }
+}
+
+h4 {
+  font-family: "Geomanist", sans-serif;
+  font-weight: 400;
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  @media (min-width: 1200px) {
+    font-size: 2.4rem;
+  }
+}
+
+h3 {
+  font-family: "Geomanist", sans-serif;
+  font-weight: 500;
+  margin-bottom: 0;
+  position: relative;
+  @media (min-width: 1200px) {
+    font-size: 2.9rem;
+  }
+}
+
+h5 {
+  font-family: "Geomanist", sans-serif;
+  font-weight: 200;
+  margin-bottom: 0;
+  position: relative;
+  text-transform: uppercase;
+  @media (min-width: 1200px) {
+    font-size: 1.6rem;
+  }
+}
+
+h6 {
+  font-family: "Geomanist", sans-serif;
+  font-weight: 400;
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  position: relative;
+  @media (min-width: 1200px) {
+    font-size: 1.8rem;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 71px;
+    height: 2px;
+    background-color: white;
+    left: -80px;
+    top: calc(50% - 2px);
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 71px;
+    height: 2px;
+    background-color: white;
+    right: -80px;
+    top: calc(50% - 2px);
+  }
+}
+
+a {
+  font-family: "Geomanist", sans-serif;
+
+  text-transform: uppercase;
+  text-decoration: none;
+  @media (min-width: 1200px) {
+    font-size: 1.8rem;
+  }
+}
+
+p {
+  font-family: "Geomanist", sans-serif;
+
+  @media (min-width: 1200px) {
+    font-size: 2.1rem;
+    line-height: 3.7rem;
+  }
+}
+
+.btn {
+  font-weight: 500;
+  color: white;
+  padding: 1.2em 2.77em 1.05em;
+  border: 2px solid white;
+  transition: 0.3s all;
+  &:hover {
+    background: white;
+    color: $main-color;
+  }
+}

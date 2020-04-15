@@ -1,0 +1,47 @@
+header {
+  position: absolute;
+  top: 112px;
+  right: 0;
+  width: 1138px;
+  z-index: 2;
+  nav {
+    @extend .shadow;
+    height: 106px;
+    display: flex;
+    background-color: white;
+    ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      padding: 0;
+      li {
+        padding: 4.1rem;
+        a {
+          font-weight: 500;
+          color: $grey-700;
+          transition: 0.3s all;
+          &:hover {
+            color: $main-color;
+          }
+        }
+
+        &.last {
+          flex-grow: 1;
+          display: flex;
+          justify-content: center;
+          background-color: $main-color;
+          a {
+            font-weight: 500;
+            flex-grow: 1;
+            font-size: 3rem;
+            color: white;
+            text-align: center;
+
+          }
+        }
+      }
+    }
+  }
+}
+

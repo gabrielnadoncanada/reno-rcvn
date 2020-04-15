@@ -1,9 +1,8 @@
-
-@import 'inc/reset';
-@import 'inc/mixins';
-@import 'inc/fonts';
-@import 'inc/variables';
-@import 'inc/layout';
-@import 'inc/section';
-
+@import 'variables';
+@import 'utils';
+@import 'layout';
+@import 'hero-banner';
+@import 'about';
+@import 'header';
+@import 'typographies';
 

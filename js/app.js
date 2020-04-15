@@ -1,18 +1,13 @@
+// Animation vers la section de contact
 
-let cards = document.getElementsByClassName('card');
-let total = cards.length;
+$('.nav-link').click(function(e){
+    e.preventDefault;
 
-cards[0].classList.add('active');
-let next = document.getElementById('next');
-let prev = document.getElementById('prev');
-console.log(cards)
+    var lien = $(this);
+    var sectionID = lien.attr('href');
+    var positionSectionTop = $(sectionID).offset().top;
 
-for (let i = 0; i < total; i++) {
-    next.addEventListener('click', function () {
-        cards[i].classList.remove('active');
-        cards[i++].classList.add('active');
-    })
-}
-
-
-
+    $('html, body').animate({
+        scrollTop: positionSectionTop
+    },1000, 'swing');
+});

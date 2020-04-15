@@ -1,0 +1,24 @@
+.hero-banner {
+  position: relative;
+  height: 962px;
+  .content {
+    position: absolute;
+  }
+
+  .white-border {
+    position: absolute;
+    right: -1px;
+    top: 0;
+  }
+
+  .cta {
+    position: absolute;
+    top: 60px;
+    left: 278px;
+    width: 624px;
+
+    .logo {
+      margin-bottom: 5.5rem
+    }
+  }
+}

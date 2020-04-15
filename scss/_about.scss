@@ -1,0 +1,25 @@
+
+.about {
+  ul {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    li {
+    }
+  }
+
+  .first {
+    position: absolute;
+    margin-top: 10rem;
+    z-index: 1;
+  }
+
+  .second {
+    @extend .shadow;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}

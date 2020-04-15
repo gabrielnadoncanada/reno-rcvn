@@ -1,0 +1,114 @@
+body {
+  max-width: 1920px;
+  margin: 0 auto;
+  position: relative;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1364px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+.row {
+  display: flex;
+  margin-bottom: 9rem;
+}
+
+.col {
+  width: 100%;
+}
+
+.col-6 {
+  width: 50%;
+  position: relative;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.about {
+  margin-top: 20rem;
+  margin-bottom: 20rem;
+}
+
+.services {
+  position: relative;
+}
+
+.card {
+  margin-left: 30px;
+  margin-right: 30px;
+  position: relative;
+  top: -250px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  &.active {
+    .shadow {
+      width: 400px;
+      height: 429px;
+    }
+    .content {
+      width: 350px;
+      border-left: 4px solid $main-color;
+      border-right: 4px solid $main-color;
+      border-bottom: 4px solid $main-color;
+      h3 {
+        color: $main-color;
+      }
+      &::before {
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 0;
+        bottom: 0;
+        left: calc(50% - 15px);
+        border-right: 15px solid transparent;
+        border-left: 15px solid transparent;
+        border-bottom: 17px solid $main-color;
+
+      }
+      .tag {
+        background-color: $main-color;
+      }
+    }
+  }
+  .content {
+    width: 320px;
+    position: relative;
+    border-left: 4px solid $grey-400;
+    border-right: 4px solid $grey-400;
+    border-bottom: 4px solid $grey-400;
+    padding-bottom: 2.2rem;
+
+    h3 {
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    h5 {
+      margin-top: 0;
+      margin-bottom: 2rem;
+    }
+
+    .tag {
+      position: absolute;
+      top: -80px;
+      right: -60px;
+      z-index: 2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      background-color: $grey-400;
+      width: 99px;
+      height: 100px;
+    }
+  }
+}
