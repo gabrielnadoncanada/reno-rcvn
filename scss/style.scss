@@ -1,8 +1,15 @@
+@import "_partials/base/bootstrap-overrides";
+@import "_partials/base/bootstrap-import";
+
 @import 'variables';
 @import 'utils';
 @import 'layout';
+@import 'header';
 @import 'hero-banner';
 @import 'about';
-@import 'header';
+@import 'services';
+@import 'testimonials';
+@import 'contact';
+@import 'footer';
 @import 'typographies';
 

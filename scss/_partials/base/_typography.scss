@@ -1,0 +1,35 @@
+// BCI Font BCI-Icons
+@import "../fonts/BCI-Icons/style.css";
+
+// CooperHewitt inclusion
+// $custom1-font-list: Thin-100_normal ThinItalic-100_italic Light-200_normal LightItalic-200_italic Medium-400_normal MediumItalic-400_italic Semibold-500_normal SemiboldItalic-500_italic Bold-700_normal BoldItalic-700_italic Heavy-900_normal HeavyItalic-900_italic Book-300_normal BookItalic-300_italic;
+//
+// @each $font in $custom1-font-list {
+//   $font-name: extract-font-name($font);
+//   $font-weight: extract-font-weight($font);
+//   $font-style: extract-font-style($font);
+//
+//   @font-face {
+//     font-family: "Custom1";
+//     src: url("../fonts/Custom1/Custom1-#{$font-name}.eot");
+//     src: url("../fonts/Custom1/Custom1-#{$font-name}.woff") format("woff"), url("../fonts/Custom1/Custom1-#{$font-name}.svg") format("svg");
+//     font-weight: $font-weight;
+//     font-style: $font-style;
+//   }
+// }
+
+// Custom2 inclusion
+// $custom2-font-list: Light-200_normal LightItalic-200_italic Medium-400_normal MediumItalic-400_italic Semibold-500_normal SemiboldItalic-500_italic Bold-700_normal BoldItalic-700_italic Black-900_normal BlackItalic-900_italic;
+//
+// @each $font in $custom2-font-list {
+//   $font-name: extract-font-name($font);
+//   $font-weight: extract-font-weight($font);
+//   $font-style: extract-font-style($font);
+//
+//   @font-face {
+//     font-family: "Custom2";
+//     src: url("../fonts/Custom2/Custom2-#{$font-name}.otf");
+//     font-weight: $font-weight;
+//     font-style: $font-style;
+//   }
+// }

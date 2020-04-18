@@ -1,0 +1,64 @@
+// $font-family-base: 'CooperHewitt', Arial, sans-serif;
+// $font-size-base: 1rem; // Assumes the browser default, typically `16px`
+// $font-weight-base: 300;
+
+// $headings-font-family: $font-family-base;
+// $headings-font-weight: 700;
+// $headings-color: $blue-dark;
+// $h1-font-size: $font-size-base * 1.8;
+// $h2-font-size: $font-size-base;
+// $h3-font-size: $font-size-base;
+
+// $link-color: $blue-link;
+// $link-hover-color: darken($link-color, 15%);
+
+// Bootstrap Breakpoints Reset (unchanged...)
+$grid-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px
+);
+
+// Bootstrap Container Widths Reset (unchanged...)
+$container-max-widths: (
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+        xl: 1140px
+);
+
+// Bootstrap Spacers Remap
+$spacer: 1rem;
+$grid-gutter-width: 30px;
+$spacers: (
+        0: 0,
+        1: ($spacer * .25),
+        2: ($spacer * .5),
+        3: $spacer,
+        4: ($spacer * 1.5),
+        5: ($spacer * 3),
+        6: ($spacer * 4),
+        7: ($spacer * 5),
+        8: ($spacer * 6),
+        9: ($spacer * 7),
+        10: ($spacer * 8),
+        "gut-x1": ($grid-gutter-width * 0.5),
+        "gut-x2": ($grid-gutter-width * 1),
+        "gut-x3": ($grid-gutter-width * 1.5),
+        "gut-x4": ($grid-gutter-width * 2),
+        "gut-x1-neg": (-$grid-gutter-width * 0.5),
+        "gut-x2-neg": (-$grid-gutter-width * 1),
+        "gut-x3-neg": (-$grid-gutter-width * 1.5),
+        "gut-x4-neg": (-$grid-gutter-width * 2)
+);
+
+// Bootstrap Sizes Remap
+$sizes: (
+        33: 33.3333%,
+        "gut-x1": ($grid-gutter-width * 0.5),
+        "gut-x2": ($grid-gutter-width * 1),
+        "gut-x3": ($grid-gutter-width * 1.5),
+        "gut-x4": ($grid-gutter-width * 2)
+);

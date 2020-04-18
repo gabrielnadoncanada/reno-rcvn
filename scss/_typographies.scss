@@ -1,4 +1,5 @@
 
+
 @font-face {
   font-family: "Geomanist";
   src: url(../fonts/Geomanist-Medium.otf);
@@ -38,13 +39,12 @@ ul {
 }
 
 h1 {
+  @include fluid-type(35px, 102px);
   font-family: "Roboto Slab", sans-serif;
   font-weight: 300;
   color: white;
-  margin-bottom: 6.5rem;
+  line-height: 1.07;
   @media (min-width: 1200px) {
-    font-size: 10.2rem;
-    line-height: 11rem;
     margin-top: 0;
   }
 
@@ -55,11 +55,9 @@ h1 {
 }
 
 h2 {
+  @include fluid-type(35px, 55px);
   font-family: "Roboto Slab", sans-serif;
   font-weight: 300;
-  @media (min-width: 1200px) {
-    font-size: 5.5rem;
-  }
 }
 
 h4 {
@@ -68,9 +66,7 @@ h4 {
   color: white;
   text-transform: uppercase;
   margin-bottom: 0;
-  @media (min-width: 1200px) {
-    font-size: 2.4rem;
-  }
+  @include fluid-type(16px, 24px);
 }
 
 h3 {
@@ -128,31 +124,81 @@ h6 {
 
 a {
   font-family: "Geomanist", sans-serif;
-
+  @include fluid-type(14px, 18px);
   text-transform: uppercase;
   text-decoration: none;
-  @media (min-width: 1200px) {
-    font-size: 1.8rem;
-  }
 }
 
 p {
+  @include fluid-type(18px, 21px);
   font-family: "Geomanist", sans-serif;
-
-  @media (min-width: 1200px) {
-    font-size: 2.1rem;
-    line-height: 3.7rem;
-  }
+  margin-bottom: 1rem;
+  line-height: 1.75;
 }
 
 .btn {
   font-weight: 500;
   color: white;
-  padding: 1.2em 2.77em 1.05em;
+  padding: 0.9em 1.5em 0.8em;
   border: 2px solid white;
   transition: 0.3s all;
+  text-transform: uppercase;
+  @include media-breakpoint-up(sm){
+    padding: 1.2em 2.77em 1.05em;
+  }
+
   &:hover {
     background: white;
     color: $main-color;
+  }
+
+  &.red {
+    background: $main-color;
+  }
+}
+
+.testimonial {
+  p {
+    font-weight: 500;
+    @media (min-width: 1200px) {
+      font-size: 4rem;
+      line-height: 4.9rem;
+    }
+  }
+
+  h5 {
+    color: $main-color;
+  }
+}
+
+label {
+  font-family: "Geomanist", sans-serif;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  color: $grey-400;
+  font-weight: 200;
+  @media (min-width: 1200px) {
+    font-size: 1.8rem;
+  }
+}
+
+footer {
+  h5 {
+    font-family: "Roboto Slab", sans-serif;
+    font-weight: 400;
+    color: $grey-400;
+    text-transform: uppercase;
+    @media (min-width: 1200px) {
+      font-size: 2.5rem;
+    }
+  }
+
+  li {
+    a {
+      color: $grey-400;
+      @media (min-width: 1200px) {
+        font-size: 1.6rem;
+      }
+    }
   }
 }

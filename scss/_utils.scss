@@ -2,23 +2,14 @@
   box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.16);
 }
 
-.pr-5 {
-  padding-right: 5rem !important;
-}
-
 .overlay {
-  position: absolute;
   width: 100%;
-  height: 490.73px;
-  left: 0;
-  top: 0;
-  background-color: rgba(#000000, .7);
-
+  &.white {
+    .content {
+      color: $grey-700;
+    }
+  }
   .content {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
     display: flex;
@@ -37,4 +28,28 @@
 
 .jc-center {
   justify-content: center;
+}
+
+.ai-center {
+  align-items: center;
+}
+
+.jc-space-between {
+  justify-content: space-between;
+}
+
+.jc-space-evenly {
+  justify-content: space-evenly;
+}
+
+@mixin fluid-type($min-font-size: 16px, $max-font-size: 21px, $lower-range: 320px, $upper-range: 1920px) {
+
+  font-size: calc(#{$min-font-size} + #{(($max-font-size / ($max-font-size * 0 + 1)) - ($min-font-size / ($min-font-size * 0 + 1)))} * ( (100vw - #{$lower-range}) / #{(($upper-range / ($upper-range * 0 + 1)) - ($lower-range / ($lower-range * 0 + 1)))}));
+
+  @media screen and (max-width: $lower-range) {
+    font-size: $min-font-size;
+  }
+  @media screen and (min-width: $upper-range){
+    font-size: $max-font-size;
+  }
 }

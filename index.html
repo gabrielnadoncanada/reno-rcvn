@@ -5,13 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Leanne Fleury, l'expert en photographie, design et tatouage.">
+    <meta name="description" content="RCVN - Rénovation et construction VN">
     <title>Rénovation et construction VN</title>
-    <meta property="og:title" content="Leanne Fleury"/>
+    <meta property="og:title" content="RCVN - Rénovation et construction VN"/>
     <meta property="og:type" content="website"/>
     <meta property="og:url" content="http://www.rcvn.ca"/>
-    <!--    <meta property="og:image" content="http://www.leannefleury.com/img/nom.jpg" />-->
-    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500i,600,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
           integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
           crossorigin="anonymous">
@@ -20,7 +18,7 @@
 
 <body>
 <header>
-    <nav>
+    <nav class="d-none d-lg-flex">
         <ul>
             <li>
                 <a href="#">Notre Compagnie</a>
@@ -40,51 +38,47 @@
         </ul>
     </nav>
 </header>
+
 <main>
     <section class="hero-banner">
-        <img class="white-border" src="img/white_border.svg" alt="">
-        <div class="content">
-            <img src="img/hero_banner_red.svg" alt="">
-            <div class="cta">
-                <img class="logo" src="img/logo_rcvn.svg" alt="">
+        <div class="container content">
+            <div class="px-0 col-10 col-md-6 pt-4 pt-md-9">
+                <img class="logo mb-7 mb-md-10" src="img/logo_rcvn.svg" alt="">
                 <h4>Expert en toiture</h4>
-                <h1>L'expérience <br><b>parle</b> d'elle-<b>même!</b></h1>
+                <h1 class="mb-6 mb-lg-9">L'expérience <br><b>parle</b> d'elle-<br><b>même!</b></h1>
                 <a class="btn" href="/services">Nos services</a>
             </div>
-        </div>
-        <div>
-            <img src="img/banner_img.jpg" alt="">
         </div>
     </section>
 
     <section class="about">
         <div class="container">
             <div class="row">
-                <div class="col-6 pr-5">
-                    <h2>Qui nous sommes?</h2>
-                    <p>
+                <div class="col-sm-12 col-md-7 col-lg-6 pr-md-8 pr-xl-10">
+                    <h2 class="mb-6">Qui nous sommes?</h2>
+                    <p class="mb-5">
                         <b>RCVN </b>est une entreprise québécoise bien établie sur la Rive-Nord de
                         Montréal qui se spécialise dans l’installation et la réfection de toiture de bardeaux d’asphalte
                         dans le secteur résidentiel et commercial. Cumulant plus de 10 ans d’expérience dans le milieu,
                         notre équipe reste constamment à l’affût des nouvelles normes et technologies afin d’offrir un
                         service clé en main et une tranquillité d’esprit à nos clients.
                     </p>
-                    <p>
+                    <p class="mb-5">
                         Chez nous, le souci du travail bien accompli, le respect de nos engagements ainsi que la
                         transparence priment dans tous les mandats que nous exécutons. Notre mission: offrir un service
                         impeccable. Le respect des lieux, un chantier propre et bien entretenu à la fin de chaque
                         journée de travail, le retour d’appel en moins de 24h ainsi qu’un service d’urgence 24/7 font
                         partie de nos normes au quotidien.
                     </p>
-                    <p>
+                    <p class="mb-5">
                         C’est simple, notre équipe priorise la qualité à la quantité de production. Nous misons sur les
                         relations de confiance et sommes à l’écoute de nos clients et de nos partenaires. Quels que ce
                         soient vos besoins, nous y répondrons avec minutie.
                     </p>
                 </div>
-                <div class="col-6">
-                    <img class="first" width="453" src="img/photo_about_1.png" alt="">
-                    <img class="second" width="440" src="img/photo_about_2.png" alt="">
+                <div class="col-sm-12 col-md-5 col-lg-6 justify-content-center align-items-start align-items-lg-center d-flex">
+                    <img class="first" src="img/photo_about_1.png" alt="">
+                    <img class="second" src="img/photo_about_2.png" alt="">
                 </div>
             </div>
         </div>
@@ -92,7 +86,7 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <h2>Nos fournisseurs</h2>
+                    <h2 class="mb-6">Nos fournisseurs</h2>
                     <ul>
                         <li>
                             <img src="img/gaf-roofing-shingles-logo.png" alt="">
@@ -123,14 +117,13 @@
     </section>
 
     <section class="services">
-        <div>
+        <div class="banner">
             <div class="overlay">
-                <div class="content">
+                <div class="content pt-10">
                     <h6>Expert en toitures</h6>
                     <h2>Nos services</h2>
                 </div>
             </div>
-            <img src="img/banner_services.jpg" alt="">
         </div>
         <div class="row jc-center">
             <div class="card">
@@ -178,9 +171,126 @@
         </div>
 
     </section>
-</main>
-<footer>
 
+    <section class="testimonial">
+        <div class="content">
+            <div class="guillemet">
+                <img src="img/guillemet.svg" alt="">
+                <img src="img/guillemet.svg" alt="">
+            </div>
+
+            <p>Très belle équipe compétente et professionnelle. Nous adorons notre nouvelle toiture. Merci!</p>
+            <h5>
+                Claude Beaulieu
+            </h5>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="container">
+            <div class="row jc-center align-items-center">
+                <div class="col-12 col-md-6">
+                    <h2 class="mb-6">Contactez-nous</h2>
+                    <p class="mb-5">
+                        Offrez-vous la tranquillité d’esprit et un service clé en main grâce à notre expertise. Nous
+                        veillons à travailler selon les normes de l’industrie en nous efforçant de les dépasser, en plus
+                        de
+                        nous baser sur des standards de qualité très élevés. Nous offrons notamment une garantie et une
+                        assurance responsabilité sur tous les travaux que nous effectuons.
+                    </p>
+                    <p class="mb-5">
+                        Soyez assuré que l’expérience-client et votre satisfaction face à nos services demeurent au
+                        coeur de
+                        nos priorités. Nous prenons le temps avec chaque client, appelez-nous dès maintenant!
+                    </p>
+                </div>
+                <div class="col-12 col-md-6">
+                    <form action="#">
+                        <div class="form-group">
+                            <label for="nom">Votre Nom</label>
+                            <input type="text" name="nom" id="nom">
+                        </div>
+                        <div class="form-group">
+                            <label for="courriel">Votre Adresse courriel</label>
+                            <input type="text" name="courriel" id="courriel">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea rows="10" type="text" name="message" id="message"></textarea>
+                        </div>
+
+                        <input class="btn red" type="submit" value="soumettre">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <div class="row jc-space-between">
+            <div class="col-12 col-md-4">
+                <img src="img/logo_rcvn_footer.svg" alt="">
+                <p>
+                    <a href="#"> Tél: 450 - 543 - 1967</a>
+
+                </p>
+                <p>
+                    <a href="#"> Email: vincentnadeau@rcvn.ca</a>
+                </p>
+                <p>
+                    facebook
+                </p>
+                <p>
+                    instagram
+                </p>
+            </div>
+            <div class="col-12 col-md-4">
+                <h5>Liens rapides</h5>
+                <ul>
+                    <li>
+                        <a href="">Accueil</a>
+                    </li>
+                    <li>
+                        <a href="">Notre compagnie</a>
+                    </li>
+                    <li>
+                        <a href="">Nos projets</a>
+                    </li>
+                    <li>
+                        <a href="">Nous joindre</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-4">
+                <h5>Nos services</h5>
+                <ul>
+                    <li>
+                        <a href="">installation de bardeaux pour maison neuve</a>
+                    </li>
+                    <li>
+                        <a href="">Réfection de toiture et pose de bardeaux</a>
+                    </li>
+                    <li>
+                        <a href="">Réparation de toiture</a>
+                    </li>
+                    <li>
+                        <a href="">Déneigement de toiture</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row jc-space-between">
+            <div class="col-sm-12 col-md-auto ">
+                <p>@2020 Rénovation et construction VN / vincentnadeau@rcvn.ca. Droits d’auteur et tous droits réservés.</p>
+            </div>
+            <div class="col col-md-auto">
+                <p>RBQ: 5767-9086-01</p>
+            </div>
+
+        </div>
+    </div>
 </footer>
 
 <script src="js/jquery-3.3.1.min.js"></script>
