@@ -12,9 +12,14 @@
     justify-content: center;
     align-items: center;
   }
+
   .content {
     position: relative;
-    max-width: 750px;
+    max-width: 500px;
+    @include media-breakpoint-up(xl) {
+      max-width: 750px;
+
+    }
     text-align: center;
     margin: 0 15px 3rem;
   }
@@ -23,7 +28,7 @@
     @include fluid-type(25px, 40px);
   }
 
-  h5{
+  h5 {
     font-size: 1.6rem;
   }
 }
@@ -32,7 +37,7 @@
   display: flex;
   position: relative;
   width: 30px;
-  @include media-breakpoint-up(md){
+  @include media-breakpoint-up(md) {
     left: -50px;
     width: 44px;
   }

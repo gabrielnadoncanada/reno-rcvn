@@ -1,12 +1,19 @@
 header {
+  transition: 0.5s all;
   position: absolute;
+  z-index: 999;
   top: 112px;
   right: 0;
-  width: 60%;
-  z-index: 2;
+  width: 70%;
+  @media only screen and (min-width: 1400px){
+    width: 60%;
+  }
+
+
   nav {
     @extend .shadow;
     height: 106px;
+    z-index: 2;
     display: flex;
     background-color: white;
     ul {
@@ -53,3 +60,11 @@ header {
   }
 }
 
+.header-scrolled{
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+
+
+}

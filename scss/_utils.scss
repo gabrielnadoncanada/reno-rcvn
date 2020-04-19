@@ -53,3 +53,7 @@
     font-size: $max-font-size;
   }
 }
+
+.hidden {
+  @extend .d-none;
+}

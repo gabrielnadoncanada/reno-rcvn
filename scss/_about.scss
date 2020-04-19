@@ -47,7 +47,7 @@
   }
 
   .first, .second {
-    width: 210px;
+    width: 185px;
     position: relative;
     @include media-breakpoint-up(sm){
       width: 300px;
