@@ -21,16 +21,9 @@
 
     }
     text-align: center;
-    margin: 0 15px 3rem;
+    margin: 0 30px 3rem;
   }
 
-  p {
-    @include fluid-type(25px, 40px);
-  }
-
-  h5 {
-    font-size: 1.6rem;
-  }
 }
 
 .guillemet {
@@ -38,8 +31,8 @@
   position: relative;
   width: 30px;
   @include media-breakpoint-up(md) {
-    left: -50px;
-    width: 44px;
+    left: 0;
+    width: 35px;
   }
 
 }

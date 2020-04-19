@@ -1,6 +1,9 @@
 .hero-banner {
   position: relative;
   height: 600px;
+  @include media-breakpoint-up(sm) {
+    height: 700px;
+  }
   @include media-breakpoint-up(md) {
     height: 962px;
   }
@@ -8,7 +11,6 @@
   background-attachment: fixed;
   background-image: url('../img/banner_img.jpg');
   background-position: top;
-  z-index: -1;
 
   &::before {
     position: absolute;
@@ -18,7 +20,6 @@
     left: 0;
     top: 0;
     background-position: center;
-    z-index: -2;
     background-image: url('../img/hero_banner_red.svg');
   }
 
@@ -31,6 +32,7 @@
 
   .logo {
     width: 90px;
+    margin-top: 8px;
     @include media-breakpoint-up(md) {
       width: 129px;
     }
