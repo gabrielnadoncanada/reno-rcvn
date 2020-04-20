@@ -199,7 +199,7 @@ header {
 #button-mobile-menu {
   position: absolute;
   right: 15px;
-  top: -87px;
+  top: -102px;
   z-index: 4;
 }
 
@@ -280,5 +280,11 @@ header {
     }
     position: fixed;
     top: 12px;
+  }
+}
+
+.mobile-fixed, #button-mobile-menu {
+  @media only screen and (min-width: 1200px){
+    display: none;
   }
 }
