@@ -22,8 +22,14 @@
 <!--
     HEADER
  -->
+
 <header>
-    <nav class="d-none d-xl-flex">
+    <a id="button-mobile-menu" class="navbar-toggle navigation-menu-button">
+        <span class="icon-bar top-bar"></span>
+        <span class="icon-bar middle-bar"></span>
+        <span class="icon-bar bottom-bar"></span>
+    </a>
+    <nav class="menu-desktop d-none d-xl-flex">
         <ul>
             <li id="logo-scrolled" class="d-none">
                 <a href="#"><img src="img/logo_rcvn_scrolled.svg" alt=""></a>
@@ -31,8 +37,14 @@
             <li>
                 <a href="#">Notre Compagnie</a>
             </li>
-            <li>
+            <li class="has-submenu">
                 <a href="#">Nos Services</a>
+                <ul class="submenu">
+                    <li><a href="">Installation de bardeaux pour maison neuve</a></li>
+                    <li><a href="">Réfection de toiture et pose de bardeaux</a></li>
+                    <li><a href="">Réparation de toiture</a></li>
+                    <li><a href="">Déneigement de toiture</a></li>
+                </ul>
             </li>
             <li>
                 <a href="#">Nos Projets</a>
@@ -41,18 +53,53 @@
                 <a href="#">Nous Joindre</a>
             </li>
             <li class="last">
-                <a href="tel:4505431967">450 - 543 - 1967</a>
+                <a href="tel:4505431967"><span>soumission gratuite<br></span>450 - 543 - 1967</a>
             </li>
         </ul>
     </nav>
+
+    <nav class="mobile-fixed">
+       <ul>
+           <li>
+               <a href="#"><img src="img/logo_rcvn_scrolled.svg" alt=""></a>
+           </li>
+       </ul>
+    </nav>
+    <nav class="menu-mobile d-none">
+        <ul>
+            <li>
+                <a href="#">Notre Compagnie</a>
+            </li>
+            <li class="has-submenu">
+                <a href="#">Nos Services</a>
+                <ul class="submenu  d-none">
+                    <li><a href="">Installation de bardeaux pour maison neuve</a></li>
+                    <li><a href="">Réfection de toiture et pose de bardeaux</a></li>
+                    <li><a href="">Réparation de toiture</a></li>
+                    <li><a href="">Déneigement de toiture</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Nos Projets</a>
+            </li>
+            <li>
+                <a href="#">Nous Joindre</a>
+            </li>
+            <li class="last">
+                <a href="tel:4505431967"><span>soumission gratuite<br></span>450 - 543 - 1967</a>
+            </li>
+        </ul>
+
+    </nav>
 </header>
+
 <!--
     MAIN
  -->
 <main>
-<!--
-    HERO-BANNER
- -->
+    <!--
+        HERO-BANNER
+     -->
     <section class="hero-banner">
         <div class="container content">
             <div class="px-0 col-10 col-md-6 pt-4 pt-md-9">
@@ -63,9 +110,9 @@
             </div>
         </div>
     </section>
-<!--
-    ABOUT-US
- -->
+    <!--
+        ABOUT-US
+     -->
     <section class="about">
         <div class="container">
             <div class="row">
@@ -98,41 +145,41 @@
             </div>
         </div>
 
-<!--        <div class="container">-->
-<!--            <div class="row">-->
-<!--                <div class="col">-->
-<!--                    <h2 class="mb-6">Nos fournisseurs</h2>-->
-<!--                    <ul>-->
-<!--                        <li>-->
-<!--                            <img src="img/gaf-roofing-shingles-logo.png" alt="">-->
-<!--                        </li>-->
-<!--                        <li>-->
-<!--                            <img src="img/Thiroco.png" alt="">-->
-<!--                        </li>-->
-<!--                        <li>-->
-<!--                            <img src="img/bp-logo.png" alt="">-->
-<!--                        </li>-->
-<!--                        <li>-->
-<!--                            <img src="img/logo-iko.png" alt="">-->
-<!--                        </li>-->
-<!--                        <li>-->
-<!--                            <img src="img/VentilationMaximum.png" alt="">-->
-<!--                        </li>-->
-<!--                        <li>-->
-<!--                            <img src="img/N-19200-Thumb%20(1).png" alt="">-->
-<!--                        </li>-->
-<!--                    </ul>-->
-<!--                </div>-->
+        <!--        <div class="container">-->
+        <!--            <div class="row">-->
+        <!--                <div class="col">-->
+        <!--                    <h2 class="mb-6">Nos fournisseurs</h2>-->
+        <!--                    <ul>-->
+        <!--                        <li>-->
+        <!--                            <img src="img/gaf-roofing-shingles-logo.png" alt="">-->
+        <!--                        </li>-->
+        <!--                        <li>-->
+        <!--                            <img src="img/Thiroco.png" alt="">-->
+        <!--                        </li>-->
+        <!--                        <li>-->
+        <!--                            <img src="img/bp-logo.png" alt="">-->
+        <!--                        </li>-->
+        <!--                        <li>-->
+        <!--                            <img src="img/logo-iko.png" alt="">-->
+        <!--                        </li>-->
+        <!--                        <li>-->
+        <!--                            <img src="img/VentilationMaximum.png" alt="">-->
+        <!--                        </li>-->
+        <!--                        <li>-->
+        <!--                            <img src="img/N-19200-Thumb%20(1).png" alt="">-->
+        <!--                        </li>-->
+        <!--                    </ul>-->
+        <!--                </div>-->
 
-<!--            </div>-->
+        <!--            </div>-->
 
-<!--        </div>-->
+        <!--        </div>-->
 
 
     </section>
-<!--
-    SERVICES
- -->
+    <!--
+        SERVICES
+     -->
     <section class="services">
         <div class="banner">
             <div class="overlay">
@@ -200,9 +247,9 @@
             </div>
         </div>
     </section>
-<!--
-    TESTIMONIALS
- -->
+    <!--
+        TESTIMONIALS
+     -->
     <section class="testimonial">
         <div class="content">
             <div class="guillemet">
@@ -216,9 +263,9 @@
             </h5>
         </div>
     </section>
-<!--
-    CONTACT-US
- -->
+    <!--
+        CONTACT-US
+     -->
     <section class="contact">
         <div class="container">
             <div class="row jc-center align-items-center">
@@ -271,8 +318,10 @@
                     <img class="d-none d-md-inline-block desktop" src="img/logo_rcvn_footer.svg" alt="">
                 </a>
                 <p class="mt-3 mt-md-5 contact">
-                    <a class="d-block" href="tel:4505431967"><i class="d-none d-md-inline-block fas fa-phone-square"></i>Tél: 450 - 543 - 1967</a>
-                    <a href="mailto:vincentnadeau@rcvn.ca"><i class="d-none d-md-inline-block fas fa-envelope-square"></i>Email: vincentnadeau@rcvn.ca</a>
+                    <a class="d-block" href="tel:4505431967"><i
+                            class="d-none d-md-inline-block fas fa-phone-square"></i>Tél: 450 - 543 - 1967</a>
+                    <a href="mailto:vincentnadeau@rcvn.ca"><i
+                            class="d-none d-md-inline-block fas fa-envelope-square"></i>Email: vincentnadeau@rcvn.ca</a>
                 </p>
                 <p>
 

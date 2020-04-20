@@ -186,6 +186,7 @@
 
   .banner {
     background-image: url('../img/banner_services.jpg');
+    background-position: left;
     height: 300px;
     @include media-breakpoint-up(md) {
       height: 350px;

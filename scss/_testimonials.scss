@@ -16,6 +16,10 @@
   .content {
     position: relative;
     max-width: 500px;
+    @include media-breakpoint-up(lg) {
+      max-width: 625px;
+
+    }
     @include media-breakpoint-up(xl) {
       max-width: 750px;
 
