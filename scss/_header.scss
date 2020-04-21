@@ -273,6 +273,9 @@ header {
 .header-scrolled {
   .mobile-fixed {
     display: flex;
+    @media only screen and (min-width: 1200px){
+      display: none;
+    }
   }
   #button-mobile-menu {
     .icon-bar {
