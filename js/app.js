@@ -43,6 +43,7 @@ $owl.owlCarousel({
         }
     }
 });
+callback();
 if (window.innerWidth <= 1300) {
     $('.owl-item.active').eq(0).addClass('center');
 } else {
@@ -95,3 +96,5 @@ $('#button-mobile-menu').on('click', function () {
         open = false;
     }
 });
+
+$owl.trigger('refresh.owl.carousel');

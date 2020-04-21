@@ -50,10 +50,15 @@ footer {
   .copy {
     &:before {
       content: "";
-      width: 100%;
+      width: 90%;
       height: 2px;
       background-color: $grey-200;
-      margin-bottom: 2rem;
+      margin: 0 auto 2rem;;
+
+      @include media-breakpoint-up(md){
+        width: 100%;
+      }
+
     }
   }
 }

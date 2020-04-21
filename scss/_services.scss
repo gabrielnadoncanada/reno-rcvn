@@ -1,8 +1,12 @@
 .owl-item {
   img.shadow {
-    max-width: 400px !important;
+    max-width: 375px !important;
   }
-
+  @include media-breakpoint-up(sm) {
+    img.shadow {
+      max-width: 400px !important;
+    }
+  }
   @include media-breakpoint-up(md) {
     img.shadow {
       max-width: 450px !important;

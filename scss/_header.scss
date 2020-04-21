@@ -1,5 +1,5 @@
 header {
-  transition: 0.2s all;
+  //transition: 0.3s width;
   position: absolute;
   z-index: 999;
   top: 112px;
@@ -76,7 +76,7 @@ header {
    height: 85px;
   }
   .submenu {
-    top: 83px;
+    top: 83px !important;
   }
 }
 

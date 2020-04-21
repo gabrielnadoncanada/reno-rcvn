@@ -5,7 +5,10 @@
   .row {
 
     margin-top: 8rem;
-    margin-bottom: 18rem;
+    margin-bottom: 8rem;
+    @include media-breakpoint-up(md){
+      margin-bottom: 18rem;
+    }
   }
 }
 
