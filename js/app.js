@@ -4,22 +4,14 @@ logo_scrolled = document.getElementById('logo-scrolled');
 arrow_left = document.getElementById('arrow-left');
 arrow_right = document.getElementById('arrow-right');
 hauteur = 112;
-if (window.pageYOffset > hauteur) {
-    logo_scrolled.classList.remove('d-none');
-    header[0].classList.add('header-scrolled');
 
-} else {
-    header[0].classList.remove('header-scrolled');
-    logo_scrolled.classList.add('d-none')
-}
+
 window.addEventListener('scroll', () => {
     if (window.pageYOffset > hauteur) {
-        logo_scrolled.classList.remove('d-none');
         header[0].classList.add('header-scrolled');
 
     } else {
         header[0].classList.remove('header-scrolled');
-        logo_scrolled.classList.add('d-none')
     }
 }, false);
 
@@ -43,7 +35,14 @@ $owl.owlCarousel({
         }
     }
 });
-callback();
+
+
+$( document ).ready(function() {
+    callback();
+});
+
+
+
 if (window.innerWidth <= 1300) {
     $('.owl-item.active').eq(0).addClass('center');
 } else {
