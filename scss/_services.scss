@@ -181,15 +181,14 @@
 .services {
   padding-bottom: 6rem;
   .container {
-    position: relative;
-    top: -120px;
+
     @include media-breakpoint-up(lg) {
       top: -240px;
     }
   }
 
   .banner {
-    background-image: url('../img/banner_services.jpg');
+
     background-position: left;
     height: 300px;
     @include media-breakpoint-up(md) {
@@ -203,4 +202,51 @@
     }
     background-repeat: no-repeat;
   }
+}
+
+.filter {
+  margin-top: 2rem;
+  max-width: 345px;
+  li {
+    height: 60px;
+    @include media-breakpoint-up(md) {
+      height: 70px;
+    }
+
+    padding: 1rem 2rem;
+    @extend .mb-1;
+    display: flex;
+    align-items: center;
+    a {
+      color: #010101;
+      text-transform: none;
+      @include fluid-type(18px, 20px);
+    }
+
+    border-left: 5px solid $main-color;
+    &.active {
+      border-left: 5px solid #252525;
+    }
+    &.first {
+      background-color: $main-color;
+      color: white;
+      @include fluid-type(22px, 25px);
+      font-weight: 700;
+    }
+    background-color: #FAFAFA;
+
+  }
+}
+
+#accueil, #services {
+  .services {
+    .container {
+      position: relative;
+      top: -120px;
+      @include media-breakpoint-up(lg) {
+        top: -240px;
+      }
+    }
+  }
+
 }

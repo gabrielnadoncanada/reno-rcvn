@@ -85,6 +85,7 @@ header {
 }
 
 .has-submenu {
+  z-index: 999;
   position: relative;
   > a::after {
     font-family: "Font Awesome 5 Free";
@@ -274,7 +275,8 @@ header {
       position: fixed;
       top: 0;
       width: 100%;
-
+      max-width: 1920px;
+      right: initial;
       nav {
         height: 85px;
       }
