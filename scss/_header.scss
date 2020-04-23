@@ -5,7 +5,7 @@
 header {
   //transition: 0.3s width;
 
-  z-index: 999;
+  z-index: 99;
 
   nav {
     @extend .shadow;
@@ -129,10 +129,10 @@ header {
 .menu-mobile{
   position: fixed;
   top: 0;
-  left: 0;
-  z-index: 3;
+  right: 0;
+  z-index: 101;
   height: 100vh !important;
-  width: 100%;
+  width: 70%;
   > ul > li {
     border-bottom: 2px solid black;
   }
@@ -183,7 +183,7 @@ header {
         position: fixed;
         bottom: 0;
         margin-left: 0;
-        width: 100%;
+        width: 70%;
         flex-grow: 0;
         a{
           font-size:25px;

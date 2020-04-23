@@ -83,17 +83,39 @@ $('.menu-mobile .has-submenu').click(function () {
 
 let open = false;
 $('#button-mobile-menu').on('click', function () {
-    $('.navbar-toggle').toggleClass('opened');
-    if(open == false){
+
+
+
+    if(open === false){
+        $('.navbar-toggle').addClass('opened');
+        $('#back').addClass('open');
         $('.menu-mobile').removeClass('d-none');
         $('html').addClass('disable-overflow');
         open = true;
     }
     else {
+        $('.navbar-toggle').removeClass('opened');
+        $('#back').removeClass('open');
         $('.menu-mobile').addClass('d-none');
         $('html').removeClass('disable-overflow');
         open = false;
     }
+    $('#back').on('click', function(){
+        $('.navbar-toggle').removeClass('opened');
+        $('#back').removeClass('open');
+        $('.menu-mobile').addClass('d-none');
+        $('html').removeClass('disable-overflow');
+        open = false;
+
+    });
+});
+
+$('.menu-mobile a').on('click', function(){
+    $('.navbar-toggle').removeClass('opened');
+    $('#back').removeClass('open');
+    $('.menu-mobile').addClass('d-none');
+    $('html').removeClass('disable-overflow');
+    open = false;
 });
 
 $owl.trigger('refresh.owl.carousel');
