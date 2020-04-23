@@ -97,3 +97,25 @@ $('#button-mobile-menu').on('click', function () {
 });
 
 $owl.trigger('refresh.owl.carousel');
+
+
+
+$('.projets-filter > li').on('click', function(){
+    $('.projets-filter > li').removeClass('active');
+    $(this).addClass('active');
+    filter($(this).data('tag'));
+});
+
+
+function filter(tag){
+    $('#projets .grid > div').each(function(){
+        let tagged = $(this).data('tag');
+        if(tagged === tag || tag === "all"){
+            $(this).show();
+        }
+        else{
+            $(this).hide();
+
+        }
+    });
+}
