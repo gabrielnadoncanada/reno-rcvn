@@ -110,7 +110,7 @@ $('#button-mobile-menu').on('click', function () {
     });
 });
 
-$('.menu-mobile a').on('click', function(){
+$('.menu-mobile a[href]').on('click', function(){
     $('.navbar-toggle').removeClass('opened');
     $('#back').removeClass('open');
     $('.menu-mobile').addClass('d-none');
