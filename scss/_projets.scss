@@ -49,3 +49,28 @@
     }
   }
 }
+
+.light-box {
+  position: relative;
+  top: -100px;
+  @include media-breakpoint-up(lg){
+    top: -150px;
+  }
+  @include media-breakpoint-up(xl){
+    top: -200px;
+  }
+
+  img {
+    @extend .shadow;
+  }
+
+}
+
+.light-box-content {
+  position: relative;
+  top: -150px;
+  @include media-breakpoint-up(lg){
+    top: 0;
+  }
+
+}

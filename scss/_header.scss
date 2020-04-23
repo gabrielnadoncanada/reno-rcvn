@@ -6,7 +6,11 @@ header {
   //transition: 0.3s width;
 
   z-index: 99;
-
+  &.opened {
+    .menu-mobile{
+      transform: translateX(0);
+    }
+  }
   nav {
     @extend .shadow;
     height: 106px;
@@ -125,14 +129,21 @@ header {
   }
 }
 
-
 .menu-mobile{
+  transform: translateX(100%);
   position: fixed;
   top: 0;
   right: 0;
   z-index: 101;
+  transition: 0.5s all;
   height: 100vh !important;
-  width: 70%;
+  width: 82%;
+  max-width: 550px;
+  @include media-breakpoint-up(sm){
+    width: 70%;
+
+  }
+
   > ul > li {
     border-bottom: 2px solid black;
   }
@@ -180,10 +191,10 @@ header {
         border-bottom: none;
         margin-bottom: 0;
         height: 100px;
-        position: fixed;
+        margin-top: auto;
         bottom: 0;
         margin-left: 0;
-        width: 70%;
+        width: 100%;
         flex-grow: 0;
         a{
           font-size:25px;
@@ -193,7 +204,6 @@ header {
     }
   }
 }
-
 
 #button-mobile-menu {
   position: absolute;
@@ -251,7 +261,6 @@ header {
 
   }
 }
-
 
 .disable-overflow {
   overflow: hidden;
@@ -313,6 +322,7 @@ header {
 
   }
 }
+
 .mobile-fixed {
   height: 60px !important;
 
