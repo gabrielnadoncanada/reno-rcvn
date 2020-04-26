@@ -223,11 +223,13 @@
       @include fluid-type(18px, 20px);
     }
 
-    border-left: 5px solid $main-color;
+    border-left: 5px solid #252525;
     &.active {
-      border-left: 5px solid #252525;
+      border-left: 5px solid $main-color;
+
     }
     &.first {
+      border-left: 5px solid $main-color;
       background-color: $main-color;
       color: white;
       @include fluid-type(22px, 25px);

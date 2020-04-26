@@ -270,3 +270,9 @@ input, textarea{
     color: $main-color;
   }
 }
+
+li.active {
+  a {
+    color: $main-color;
+  }
+}
