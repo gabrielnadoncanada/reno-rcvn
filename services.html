@@ -284,14 +284,4 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
 <script src="js/app.js"></script>
 </body>
-<script>
-    $("#my-form").submit(function(e) {
-        e.preventDefault();
-
-        var $form = $(this);
-        $.post($form.attr("action"), $form.serialize()).then(function() {
-            alert("Thank you!");
-        });
-    });
-</script>
 </html>
