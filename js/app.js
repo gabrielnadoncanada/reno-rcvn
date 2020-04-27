@@ -102,3 +102,11 @@ function filter(tag){
     });
 }
 
+$("#my-form").submit(function(e) {
+    e.preventDefault();
+
+    var $form = $(this);
+    $.post($form.attr("action"), $form.serialize()).then(function() {
+        alert("Merci nous avons bien reçu votre message!");
+    });
+});
