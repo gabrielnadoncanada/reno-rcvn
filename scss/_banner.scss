@@ -41,11 +41,21 @@
 .services {
   .banner{
     background-position: center;
+
+    .overlay {
+      height: 100%;
+      .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+      }
+    }
     h1 {
       max-width: 950px;
       margin: 0 auto;
       text-align: center;
-      @extend .mt-8;
+      //@extend .mt-8;
     }
   }
 }

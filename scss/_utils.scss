@@ -21,7 +21,11 @@
     }
     h2 {
       margin-top: 0;
-      padding-bottom: 15rem;
+      padding-bottom: 10rem;
+      @include media-breakpoint-up(lg){
+        padding-bottom: 18rem;
+      }
+
     }
   }
 }
