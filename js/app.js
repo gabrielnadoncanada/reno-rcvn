@@ -1,3 +1,4 @@
+$(document ).ready(function() {
 header = document.getElementsByTagName('header');
 banner = document.getElementsByClassName('hero-banner');
 logo_scrolled = document.getElementById('logo-scrolled');
@@ -31,10 +32,7 @@ $owl.owlCarousel({
     }
 });
 
-
-$(document ).ready(function() {
-    callback();
-});
+callback();
 
 if (window.innerWidth <= 1300) {
     $('.owl-item.active').eq(0).addClass('center');
@@ -109,4 +107,6 @@ $("#my-form").submit(function(e) {
     $.post($form.attr("action"), $form.serialize()).then(function() {
         alert("Merci nous avons bien reçu votre message!");
     });
+});
+
 });
