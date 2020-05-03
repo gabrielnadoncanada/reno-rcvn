@@ -21,7 +21,9 @@ async function WebpIsSupported() {
 
 (async () => {
     if(await WebpIsSupported()) {
-        $('html').addClass('webp');
+    }
+    else {
+        $('html').removeClass('webp');
     }
 })();
 
