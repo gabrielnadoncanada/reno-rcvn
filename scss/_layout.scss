@@ -197,12 +197,19 @@ header {
   }
 }
 
+.menu-mobile .has-submenu>a::after {
+  position: absolute;
+}
+
 .has-submenu {
   z-index: 999;
   position: relative;
   > a::after {
-    font-family: "Font Awesome 5 Free";
-    content: "\f107";
+    background-image: url('../img/icon/angle-down-solid.svg');
+    content: "";
+    width: 11px;
+    height: 22px;
+    background-size: 11px 22px;
     font-weight: 900;
     margin-left: 1rem;
   }
