@@ -17,5 +17,9 @@
     "gulp-sourcemaps": "^2.6.4",
     "gulp-watch": "^5.0.1",
     "prettier": "^1.16.4"
+  },
+  "dependencies": {
+    "imagemin": "^7.0.1",
+    "imagemin-webp": "^5.1.0"
   }
 }

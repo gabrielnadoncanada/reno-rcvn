@@ -1235,30 +1235,81 @@ footer {
   }
 
   .grid {
-    div {
+    > div {
       @extend .col-12;
       @extend .col-sm-6;
       @extend .mb-5;
       @extend .col-md-4;
       @extend .col-lg-3;
       @extend .text-center;
+      .content {
+        z-index: -1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-right: 30px;
+        opacity: 0;
+        position: absolute;
+        transition: 0.5s all;
+        top: 100%;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        h4 {
+          font-size: 2.5rem;
+          max-width: 80%;
+          margin: 0 auto 3rem;
+        }
+      }
+      &:hover {
+        > picture {
+          filter: brightness(30%);
+          transition: 0.5s all;
+        }
+        .content {
+          z-index: 1;
+          opacity: 1;
+          position: absolute;
+          top: 0;
+          pointer-events: auto;
+        }
+      }
       img {
         width: 100%;
+
       }
     }
+
   }
 }
 
+
+.modal {
+  display: none;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  //display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0,0,0,0.7);
+  .modal-content {
+    background-color: white;
+    width: 70%;
+    height: 65%;
+    max-height: 850px;
+    padding: 6rem;
+    min-width: 305px;
+    max-width: 1250px;
+  }
+}
+
+
 .light-box {
   position: relative;
-  top: -100px;
-  @include media-breakpoint-up(lg){
-    top: -150px;
-  }
-  @include media-breakpoint-up(xl){
-    top: -200px;
-  }
-
   img {
     @extend .shadow;
   }
