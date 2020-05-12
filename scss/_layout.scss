@@ -1061,6 +1061,12 @@ footer {
 }
 
 //banner
+.services {
+  .banner {
+    background-size: cover;
+  }
+}
+
 
 .webp {
   #accueil, #services, #refection {
@@ -1345,17 +1351,17 @@ footer {
   font-weight: 200;
 }
 
-//@font-face {
-//  font-family: "Roboto Slab";
-//  src: url(../fonts/RobotoSlab-Light.ttf);
-//  font-weight: 300;
-//}
-//
-//@font-face {
-//  font-family: "Roboto Slab";
-//  src: url(../fonts/RobotoSlab-Medium.ttf);
-//  font-weight: 500;
-//}
+@font-face {
+  font-family: "Roboto Slab";
+  src: url(../fonts/RobotoSlab-Light.ttf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Roboto Slab";
+  src: url(../fonts/RobotoSlab-Medium.ttf);
+  font-weight: 500;
+}
 
 html {
   font-size: 62.5%;
