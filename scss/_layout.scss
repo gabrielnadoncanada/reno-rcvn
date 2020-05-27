@@ -529,7 +529,46 @@ header {
     }
   }
 
+  h4 {
+    animation: textFade 600ms forwards;
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  h1 {
+    opacity: 0;
+    transform: translateY(60px);
+    animation: textFade 600ms forwards;
+    animation-delay: 300ms;
+  }
+  a.btn {
+    opacity: 0;
+    transform: translateY(60px);
+    animation: textFade 600ms forwards;
+    animation-delay: 600ms;
+  }
 }
+
+.banner h1 {
+  animation: textFade 600ms forwards;
+  opacity: 0;
+  transform: translateY(60px);
+}
+
+
+//keyframes
+
+@keyframes textFade {
+  from {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
 
 #back.open{
   background-color: rgba(0,0,0,0.7);
@@ -1621,3 +1660,4 @@ li.active {
     color: $main-color;
   }
 }
+
