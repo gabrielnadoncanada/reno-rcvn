@@ -51,10 +51,10 @@ $(document).ready(function () {
 
     window.addEventListener('scroll', () => {
         if (window.pageYOffset > hauteur) {
-            header[0].classList.add('header-scrolled');
+            // header[0].classList.add('header-scrolled');
 
         } else {
-            header[0].classList.remove('header-scrolled');
+            // header[0].classList.remove('header-scrolled');
         }
     }, false);
 

@@ -1,11 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1921.928" height="964" viewBox="0 0 1921.928 964">
-  <g id="Group_693" data-name="Group 693" transform="translate(-0.001 -0.061)">
-    <path id="Path_172" data-name="Path 172" d="M-10640.883-475h1249.209l-482.652,962h-767.6Z" transform="translate(10641.929 475.062)" fill="#bd0f15" opacity="0.837"/>
-    <g id="Group_668" data-name="Group 668" transform="translate(135.276)">
-      <g id="Group_691" data-name="Group 691">
-        <path id="IMG_1303" d="M1084.244,111.117l30.076-59.935,671.718-.065v60Z" transform="translate(0.614 -51.056)" fill="#fff"/>
-        <rect id="Rectangle_471" data-name="Rectangle 471" width="55" height="964" transform="translate(1731.652 0.062)" fill="#fff"/>
-      </g>
-    </g>
-  </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.2.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1921.9 964" style="enable-background:new 0 0 1921.9 964;" xml:space="preserve">
+<style type="text/css">
+	.st0{opacity:0.837;fill:#BD0F15;enable-background:new    ;}
+</style>
+<g id="Group_693" transform="translate(-0.001 -0.061)">
+	<path id="Path_172" class="st0" d="M1,0.1h1249.2l-482.7,964H0L1,0.1z"/>
+</g>
 </svg>

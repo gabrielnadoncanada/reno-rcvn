@@ -517,6 +517,8 @@ header {
     left: 0;
     top: 0;
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-image: url('../img/hero_banner_red.svg');
   }
 
@@ -538,26 +540,28 @@ header {
   h4 {
     animation: textFade 600ms forwards;
     opacity: 0;
-    transform: translateY(60px);
+    transform: translateY(30px);
   }
   h1 {
     opacity: 0;
-    transform: translateY(60px);
+    transform: translateY(30px);
     animation: textFade 600ms forwards;
     animation-delay: 300ms;
   }
   a.btn {
     opacity: 0;
-    transform: translateY(60px);
+    transform: translateY(30px);
     animation: textFade 600ms forwards;
     animation-delay: 600ms;
   }
+
+
 }
 
 .banner h1 {
   animation: textFade 600ms forwards;
   opacity: 0;
-  transform: translateY(60px);
+  transform: translateY(30px);
 }
 
 
@@ -566,7 +570,7 @@ header {
 @keyframes textFade {
   from {
     opacity: 0;
-    transform: translateY(60px);
+    transform: translateY(30px);
   }
   to {
     opacity: 1;
@@ -946,7 +950,7 @@ header {
 
 .webp {
   .testimonial {
-    background-image: url('../img/banner_testimonial.webp');
+    background-image: url('../img/banner_testimonial.jpg');
   }
 }
 
@@ -1294,6 +1298,12 @@ footer {
   }
 
   .grid {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    @include media-breakpoint-up(md){
+      margin-top: 9rem;
+      margin-bottom: 9rem;
+    }
     > div {
       @extend .col-12;
       @extend .col-sm-6;
