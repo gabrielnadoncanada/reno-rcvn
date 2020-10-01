@@ -1240,13 +1240,11 @@ footer {
 #projets {
   .services {
     .banner {
-      background-image: url('../img/projets/neuve/chalet-saint-donat-1.jpg');
-      background-position: center -420px;
-      background-size: cover;
+      max-height: 490px !important;
 
-      .overlay {
-        background: rgba(0,0,0,0.7);
-      }
+      background-image: url("../img/services_maison_neuve.jpg");
+
+      background-size: cover;
     }
   }
 }
