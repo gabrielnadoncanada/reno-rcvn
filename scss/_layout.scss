@@ -1472,7 +1472,7 @@ h4 {
   color: white;
   text-transform: uppercase;
   margin-bottom: 0;
-  @include fluid-type(16px, 24px);
+  @include fluid-type(14px, 24px);
 }
 
 h3 {
@@ -1595,7 +1595,7 @@ label {
 footer {
   h5 {
     font-family: "Roboto Slab", sans-serif;
-    font-weight: 400;
+    font-weight: 600 !important;
     color: $grey-400;
     text-transform: uppercase;
     @media (min-width: 1200px) {
