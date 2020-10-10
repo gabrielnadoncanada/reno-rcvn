@@ -508,6 +508,7 @@ header {
   background-repeat: no-repeat;
   background-image: url('../img/banner_img.jpg');
   background-position: top;
+  background-size: cover;
 
   &::before {
     position: absolute;
