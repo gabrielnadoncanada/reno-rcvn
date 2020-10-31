@@ -1,0 +1,17 @@
+// Typography
+@function extract-font-name($font){
+  $fontNameEnd: str-index($font, '-') - 1;
+  $fontName: str-slice($font, 0, $fontNameEnd);
+  @return $fontName;
+}
+@function extract-font-weight($font){
+  $fontWeightStart: str-index($font, '-') + 1;
+  $fontWeightEnd: str-index($font, '_') - 1;
+  $fontWeight: str-slice($font, $fontWeightStart, $fontWeightEnd);
+  @return $fontWeight;
+}
+@function extract-font-style($font){
+  $fontStyleStart: str-index($font, '_') + 1;
+  $fontStyle: str-slice($font, $fontStyleStart);
+  @return $fontStyle;
+}

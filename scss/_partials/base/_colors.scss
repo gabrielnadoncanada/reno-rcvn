@@ -1,0 +1,9 @@
+// Site Specific Colors
+$some-color-one: #000;
+$some-color-two: #fff;
+
+// Bootstrap Theme Colors Remap
+$theme-colors: (
+  "some-color-one": $some-color-one,
+  "some-color-two": $some-color-two
+);

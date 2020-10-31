@@ -124,25 +124,34 @@
         </div>
         <div class="container">
             <div class="row mb-0">
-                <div class="col-sm-12 col-md-auto col-lg-4 pr-md-8">
-                    <div class="mb-6 mb-lg-0">
+                <div class="col-sm-12 col-lg-4 pr-lg-8">
+                    <div class="mb-4 mb-lg-6 mb-lg-0">
                         <ul class="filter">
                             <li class="first">
                                 Nos services
                             </li>
-                            <li>
-                                <a href="/reparation.html">Réparation de toiture</a>
-                            </li>
-                            <li>
-                                <a href="/maison_neuve.html">Installation de bardeaux pour maison neuve</a>
-                            </li>
-                            <li class="active">
-                                <a href="/refection.html">Réfection de toiture</a>
-                            </li>
-                            <li>
-                                <a href="/deneigement.html">Déneigement de toiture</a>
-                            </li>
+                            <div class="d-none d-lg-block">
+                                <li>
+                                    <a href="/reparation.html">Réparation de toiture</a>
+                                </li>
+                                <li>
+                                    <a href="/maison_neuve.html">Installation de bardeaux pour maison neuve</a>
+                                </li>
+                                <li class="active">
+                                    <a href="/refection.html">Réfection de toiture</a>
+                                </li>
+                                <li>
+                                    <a href="/deneigement.html">Déneigement de toiture</a>
+                                </li>
+                            </div>
+                            <select class="d-lg-none form-control form-control-lg" name="services" id="services">
+                                <option value="reparation.html">Réparation de toiture</option>
+                                <option value="maison_neuve.html">Installation de bardeaux pour maison neuve</option>
+                                <option selected="selected" value="refection.html">Réfection de toiture</option>
+                                <option value="deneigement.html">Déneigement de toiture</option>
+                              </select>
                         </ul>
+                        
                     </div>
                 </div>
                 <div class="col-sm-12 col-lg-8 d-flex ai-center ">

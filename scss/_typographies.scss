@@ -1,0 +1,278 @@
+@font-face {
+  font-family: "Geomanist";
+  src: url(../fonts/Geomanist-Medium.otf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Geomanist";
+  src: url(../fonts/Geomanist-Regular.otf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Geomanist";
+  src: url(../fonts/Geomanist-Book.otf);
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "Roboto Slab";
+  src: url(../fonts/RobotoSlab-Light.ttf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Roboto Slab";
+  src: url(../fonts/RobotoSlab-Medium.ttf);
+  font-weight: 500;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+#accueil h1 {
+  @include fluid-type(35px, 102px);
+}
+h1 {
+  @include fluid-type(35px, 80px);
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 300;
+  color: white;
+  line-height: 1.07;
+  @media (min-width: 1200px) {
+    margin-top: 0;
+  }
+
+  b {
+    font-family: "Roboto Slab", sans-serif;
+    font-weight: 500;
+  }
+}
+
+h2 {
+  @include fluid-type(35px, 55px);
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 300;
+}
+
+h4 {
+  font-family: "Geomanist", sans-serif;
+  font-weight: 400;
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  @include fluid-type(16px, 24px);
+}
+
+h3 {
+  font-family: "Geomanist", sans-serif;
+  font-weight: 500;
+  margin-bottom: 0;
+  position: relative;
+  @include fluid-type(20px, 24px);
+
+}
+
+h5 {
+  font-family: "Geomanist", sans-serif;
+  font-weight: 200;
+  margin-bottom: 0;
+  position: relative;
+  text-transform: uppercase;
+  @include fluid-type(12.25px, 16px);
+}
+
+h6 {
+  font-family: "Geomanist", sans-serif;
+  font-weight: 400;
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  position: relative;
+  @include fluid-type(16px, 18px);
+
+  &::before {
+    position: absolute;
+    content: "";
+    height: 2px;
+    background-color: white;
+    top: calc(50% - 2px);
+    width: 50px;
+    left: -60px;
+    @include media-breakpoint-up(md){
+      width: 71px;
+      left: -80px;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    height: 2px;
+    background-color: white;
+    top: calc(50% - 2px);
+    width: 50px;
+    right: -60px;
+    @include media-breakpoint-up(md){
+      width: 71px;
+      right: -80px;
+    }
+  }
+}
+
+a {
+  font-family: "Geomanist", sans-serif;
+  @include fluid-type(14px, 18px);
+  text-transform: uppercase;
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+    color: $main-color;
+  }
+}
+
+p {
+  @include fluid-type(18px, 21px);
+  font-family: "Geomanist", sans-serif;
+  margin-bottom: 1rem;
+  line-height: 1.75;
+}
+
+.btn {
+  font-weight: 500;
+  color: white;
+  padding: 0.9em 1.5em 0.8em;
+  border: 2px solid white;
+  transition: 0.3s all;
+  text-transform: uppercase;
+  @include media-breakpoint-up(sm){
+    padding: 1.2em 2.77em 1.05em;
+  }
+
+  &:hover {
+    background: white;
+    color: $main-color;
+  }
+
+  &.red {
+    background: $main-color;
+  }
+}
+
+.testimonial {
+  p {
+    font-weight: 500;
+    @media (min-width: 1200px) {
+      font-size: 4rem;
+      line-height: 4.9rem;
+    }
+  }
+
+  h5 {
+    color: $main-color;
+  }
+}
+
+label {
+  font-family: "Geomanist", sans-serif;
+  text-transform: uppercase;
+  color: $grey-400;
+  font-weight: 200;
+  @include fluid-type(16px, 18px);
+}
+
+footer {
+  h5 {
+    font-family: "Roboto Slab", sans-serif;
+    font-weight: 400;
+    color: $grey-400;
+    text-transform: uppercase;
+    @media (min-width: 1200px) {
+      font-size: 2.5rem;
+    }
+  }
+
+  li {
+    a {
+      color: $grey-400;
+      @include fluid-type(16px, 18px);
+      text-transform: none;
+    }
+  }
+}
+
+footer {
+  .contact {
+    i {
+      font-size: 25px;
+    }
+
+    a {
+      color: $grey-400;
+      text-transform: none;
+      &:hover {
+        color: $main-color;
+      }
+    }
+  }
+  .social {
+    i {
+      font-size: 30px;
+      color: $grey-400;
+    }
+  }
+
+  h5 {
+    @include fluid-type(18px, 25px);
+    text-transform: none;
+  }
+
+  .copy {
+    p {
+      @include fluid-type(14px, 16px);
+    }
+  }
+}
+
+input[type="submit"]{
+  padding: 1em 3em;
+  @extend .shadow;
+  border: none;
+  @include fluid-type(14px, 18px);
+  &:hover {
+    background: darken($main-color, 4);
+    color: white;
+  }
+}
+
+input, textarea{
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.16);
+  @include fluid-type(16px, 18px);
+}
+
+.testimonial {
+  p {
+    @include fluid-type(25px, 40px);
+  }
+  h5 {
+    font-size: 1.6rem;
+  }
+}
+
+.fab {
+  &:hover {
+    color: $main-color;
+  }
+}
+
+li.active {
+  a {
+    color: $main-color;
+  }
+}

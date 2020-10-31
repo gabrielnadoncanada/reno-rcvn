@@ -1,0 +1,69 @@
+#accueil, #services, #refection {
+  .services {
+    .banner {
+      background-image: url('../img/banner_services.jpg');
+    }
+  }
+}
+
+#maison_neuve {
+  .services {
+    .banner {
+      background-image: url('../img/services_maison_neuve.jpg');
+    }
+  }
+}
+
+#reparation {
+  .services {
+    .banner {
+      background-image: url('../img/services_reparation.jpg');
+    }
+  }
+}
+
+#deneigement {
+  .services {
+    .banner {
+      background-image: url('../img/services_deneigement.jpg');
+    }
+  }
+}
+
+#projet-1 {
+  .services {
+    .banner {
+      background-image: url('../img/projets/projet-1-banner.jpg');
+    }
+  }
+}
+
+.services {
+  .banner{
+    background-position: center;
+
+    .overlay {
+      height: 100%;
+      .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+      }
+    }
+    h1 {
+      max-width: 950px;
+      margin: 0 auto;
+      text-align: center;
+      //@extend .mt-8;
+    }
+  }
+}
+
+#projets {
+  .services {
+    .banner {
+      background-image: url('../img/projets.jpg');
+    }
+  }
+}

@@ -159,4 +159,12 @@ $(document).ready(function () {
             modal.css('display','flex');
         })
     })
+
+    $('#services').change(function(event){
+        let url = $(this).val();
+        if (url) {
+            window.location = url;
+        }
+        return false;
+    })
 });

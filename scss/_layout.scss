@@ -906,7 +906,7 @@ header {
 
     padding: 1rem 2rem;
     padding-right: 0;
-    @extend .mb-1;
+    @extend .mb-lg-1;
     display: flex;
     align-items: center;
     a {
@@ -1693,4 +1693,9 @@ li.active {
 
 body > main {
   min-height: 100vh;
+}
+
+#services option {
+  color: #010101;
+ 
 }
