@@ -1706,7 +1706,8 @@ body > main {
 }
 
 .filter {
-  @extend .my-3;
+  @extend .mt-3;
+  @extend .mb-5;
   @extend .mt-lg-5;
   @extend .mb-lg-3;
 }
