@@ -148,6 +148,7 @@ $(document).ready(function () {
         var $form = $(this);
         $.post($form.attr("action"), $form.serialize()).then(function () {
             alert("Merci nous avons bien reçu votre message!");
+            $('#my-form').trigger("reset");
         });
     });
 
